@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<!-- JQuery Mobile Start -->
+	
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+	
+	<title>BMI Calculator</title>
+	
+	<meta charset="utf-8">
+	
+	<!-- For responsive web design using media queries - css -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<script src="js/script.js"></script>
+	
+	<script>
+		let sean = 25;
+		switch(true) 
+		{
+			case(sean>15):
+			console.log("above 15");
+			break;
+			
+			case(sean<15):
+			console.log("below 15");
+			break;
+			
+			default:
+			console.log("is 15");
+		}
+	</script>
+	
+</head>
+	
+<body>
+
+	<form name="bmiForm">
+		Your Weight(kg): <input type="text" name="weight" size="10"><br/>
+		Your Height(cm): <input type="text" name="height" size="10"><br/>
+		
+		<input type="button" value="Calculate BMI" onClick="calculateBmi()"><br/>
+		
+		Your BMI: <input type="text" name="bmi" size="10"><br/>
+		This Means: <input type="text" name="meaning" size="25"><br/>
+		<input type="reset" value="Reset"/>
+	</form>
+	
+</body>
+</html>
